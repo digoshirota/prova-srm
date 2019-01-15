@@ -1,0 +1,30 @@
+nav{
+	background-color: #01233e;
+    position: relative;
+}
+nav ul{
+	margin: 0;
+    list-style: none;
+    padding: 0;
+}
+nav li{
+	display: flex;
+	position: relative;
+    padding: 5px 15px;
+    border-bottom: 1px solid #4997d1;
+}
+nav p {
+	color:#fff;
+}
+nav .img img{
+	width: 43px;
+    margin: 5px 5px 0 0;
+}
+.arrow{
+	position: absolute;
+    right: 7px;
+    top: 17px;
+}
+.arrow img{
+	width: 30px;
+}

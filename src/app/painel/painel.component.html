@@ -1,0 +1,31 @@
+<div class="esquerda">
+	<h3>Atalhos</h3>
+	<div class="features">
+		<p>Operacional</p>
+		<div class="wrapper">
+			<div class="box" *ngFor="let painel of painels">
+				<a href="{{painel.link}}">{{painel.name}}</a>
+			</div>
+		</div>
+	</div>
+	<div class="features2">
+		<p>Geral</p>
+		<div class="box" *ngFor="let painel2 of painels2">
+			<a href="{{painel2.link}}">{{painel2.name}}</a>
+		</div>
+	</div>
+</div>
+<div class="direita">
+	<div class="chamada">
+		<h3>Alertas</h3>
+		<p>Últimos 5 dias</p>
+	</div>
+	<div class="features3" >
+		<div class="linha" *ngFor="let painel3 of painels3">
+			<p><span>{{painel3.qtd}} </span> Notas Canceladas</p>
+			<select class="{{painel3.class}}">
+				<option value="{{painel4.id}}" *ngFor="let painel4 of painels4">{{painel4.action}}</option>
+			</select>
+		</div>
+	</div>
+</div>

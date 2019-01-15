@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Srm</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+  <app-root></app-root>
+  <script type="text/javascript" src="/assets/js/jquery-2.2.4.min.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function(){
+    $('.menu-mobile').click(function(){
+      $('.info-topo').show().animate({left: "-70px"});
+      $('.close').show();
+    });
+    $('.close').click(function(){
+      $('.info-topo').animate({left: "-399px"});
+      $('.close').fade();
+    });
+    $('.expandir').click(function(){
+      alert('alo');
+      $('app-menu[_ngcontent-c0]').show().animate({right: "-5px;"});
+      $('.close2').show();
+    });
+    $('.close2').click(function(){
+      $('app-menu')..animate({right: "-253px;"});
+    });
+  })
+</script>
+</body>
+</html>

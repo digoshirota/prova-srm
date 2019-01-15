@@ -1,0 +1,14 @@
+<nav>
+	<span class="close2 none">X</span>
+	<ul>
+		<li *ngFor="let menu of menus">
+			<div class="img">
+				<img src="{{menu.icon}}">
+			</div>
+			<p>{{menu.name}}</p>
+			<div class="arrow">
+				<img src="/assets/img/arrow3.jpg" class="{{menu.arrow}}">
+			</div>
+		</li>	
+	</ul> 
+</nav>
